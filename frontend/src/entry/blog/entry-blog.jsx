@@ -1,8 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import BlogApp from './apps/BlogApp'
 
-ReactDOM.render(
-  <div>entry-blog</div>,
-  document.getElementById('root')
-)
-console.log('entry-blog')
+ReactDOM.render(<BlogApp />, document.getElementById('root'))

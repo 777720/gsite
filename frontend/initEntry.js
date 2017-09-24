@@ -26,6 +26,7 @@ function getEntrys(config, rootPath, fn) {
   var files = fs.readdirSync(rootPath)
   for (var key in files) {
     var fullName = path.join(rootPath, '/', files[key])
+    console.log('拿到fullName：' + fullName)
     var stat = fs.lstatSync(fullName)
     if (stat.isDirectory() === true) {
       getEntrys(config, fullName, fn)
